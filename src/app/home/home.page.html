@@ -12,9 +12,50 @@
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div class="container">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <ion-title class="text-danger">Login</ion-title>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingCorreoL" placeholder="name@example.com">
+          <label for="floatingCorreoL">Correo</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPasswordL" placeholder="Password">
+          <label for="floatingPasswordL">Contraseña</label>
+        </div>
+        <div class="form-floating d-flex justify-content-center">
+          <input class="btn btn-danger" type="submit" value="login" (click)="onSubmitLogin()">
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <ion-title class="text-danger">Register</ion-title>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingNombreR" placeholder="name@example.com">
+          <label for="floatingNombreR">Nombre</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingApellidoR" placeholder="name@example.com">
+          <label for="floatingApellidoR">Apellido</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingCorreoR" placeholder="name@example.com">
+          <label for="floatingCorreoR">Correo</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPasswordR" placeholder="Password">
+          <label for="floatingPasswordR">Contraseña</label>
+        </div>
+        <div class="form-floating d-flex justify-content-center">
+          <input class="btn btn-danger" type="submit" value="Registro"  (click)="onSubmitRegister()">
+        </div>
+      </div>
+    </div>
+
   </div>
+
+
+
 </ion-content>
